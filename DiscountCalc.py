@@ -1,10 +1,13 @@
 def calculate_discount(price, discount_percent):
     if discount_percent >= 20:
+        # Calculate the discount amount
         discount_amount = price * (discount_percent / 100)
         final_price = price - discount_amount
         return final_price
     else:
+        # Return the original price if the discount is less than 20%
         return price
+        
 
 # Prompt the user for input
 try:
@@ -20,3 +23,4 @@ try:
 
 except ValueError:
     print("Invalid input. Please enter numeric values.")
+
